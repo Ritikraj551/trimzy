@@ -1,0 +1,28 @@
+{
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./css/style.css",
+    "watch": "tailwindcss -i ./src/input.css -o ./css/style.css --watch"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  },
+  "name": "trimzy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ritikraj551/trimzy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Ritikraj551/trimzy/issues"
+  },
+  "homepage": "https://github.com/Ritikraj551/trimzy#readme"
+}

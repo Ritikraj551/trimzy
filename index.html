@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+    <title>Trimzy</title>
+  </head>
+  <body>
+    <!-- nav container -->
+    <nav class="flex justify-between items-center px-12 py-4">
+      <div class="flex justify-center items-center gap-x-12">
+        <h2 class="text-3xl font-serif font-bold">Trimzy</h2>
+        <div class="lg:flex hidden gap-6 text-gray-500 text-sm">
+          <a href="">Features</a>
+          <a href="">Pricing</a>
+          <a href="">Resources</a>
+        </div>
+      </div>
+      <div class="lg:flex hidden justify-center items-center gap-6">
+        <button class="text-gray-500">Login</button>
+        <button class="bg-emerald-500 px-5 text-white py-1 rounded-2xl">
+          Sign Up
+        </button>
+      </div>
+      <!-- Hamburger button -->
+      <div class="lg:hidden">
+        <button
+          id="menu-btn"
+          type="button"
+          class="z-40 block hamburger lg:hidden focus:outline-none"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+      <div
+        id="menu"
+        class="absolute hidden justify-center items-center right-0 top-14 flex-col self-end w-full py-6 space-y-6 text-lg text-white uppercse rounded-3xl bg-gray-700"
+      >
+        <div class="flex flex-col border-b-2 border-b-gray-400 pb-6">
+          <a href="" class="hover:text-violet-500">Features</a>
+          <a href="" class="hover:text-violet-500">Pricing</a>
+          <a href="" class="hover:text-violet-500">Resources</a>
+        </div>
+        <div class="flex flex-col">
+          <button class="text-gray-500">Login</button>
+          <button
+            class="w-full bg-emerald-500 px-5 text-white py-1 rounded-2xl"
+          >
+            Sign Up
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="container flex flex-col-reverse mx-auto lg:flex-row px-12">
+        <div class="flex flex-col space-y-10 mb-44 lg:mt-16 lg:w-1/2 xl:mb-52">
+          <h2
+            class="text-5xl font-serif font-bold text-center lg:text-left lg:text-6xl lg:max-w-md"
+          >
+            More than just shorter links
+          </h2>
+          <p
+            class="text-gray-500 text-2xl text-center lg:max-w-md lg:text-left"
+          >
+            Build your brand's recognitionand get detailed insights on how your
+            links are performing.
+          </p>
+          <div class="mx-auto lg:mx-0">
+            <a
+              class="bg-emerald-500 text-2xl font-bold px-10 text-white py-5 rounded-full hover:opacity-70"
+              >Get Started</a
+            >
+          </div>
+        </div>
+        <div class="mb-24 mt-16 mx-auto lg:w-1/2 md:w-180 lg:mb-0">
+          <img src="images/hero.png" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Shorten section -->
+    <section id="shorten">
+      <div
+        class="flex flex-col justify-center items-center px-8 space-y-6 mb-20"
+      >
+        <form
+          action=""
+          id="link-shorten"
+          class="relative flex flex-col lg:flex-row justify-center items-center w-full rounded-2xl p-8 bg-violet-700 gap-2"
+        >
+          <input
+            id="link-input"
+            type="text"
+            placeholder="Shorten a link here"
+            class="flex-1 placeholder-orange-400 focus:outline-none rounded-2xl py-2 px-4 w-full lg:w-10/12 border-2"
+          />
+          <button
+            class="px-8 py-2 w-full lg:w-1/6 bg-emerald-500 text-white rounded-2xl"
+          >
+            Shorten it!
+          </button>
+
+          <!-- Error message -->
+           <div id="err-msg" class="absolute left-12 bottom-2 text-red-700 text-sm italic">
+           </div>
+        </form>
+
+        <!--Dummy Links -->
+        <div
+          class="flex flex-col lg:flex-row justify-between items-center w-full rounded-2xl p-4 bg-white"
+        >
+          <div>
+            <p>https://frontendmentor.io</p>
+          </div>
+
+          <div
+            class="flex flex-col lg:flex-row justify-center items-center gap-2"
+          >
+            <p class="text-emerald-500">https://rel.link/k4lKyk</p>
+            <button class="bg-emerald-500 rounded-2xl text-white px-6 py-2">
+              Copy
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col lg:flex-row justify-between items-center w-full rounded-2xl p-4 bg-white"
+        >
+          <div>
+            <p>https://frontendmentor.io</p>
+          </div>
+
+          <div
+            class="flex justify-center items-center flex-col lg:flex-row gap-2"
+          >
+            <p class="text-emerald-500">https://rel.link/k4lKyk</p>
+            <button class="bg-violet-700 rounded-2xl text-white px-6 py-2">
+              Copy
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col lg:flex-row justify-between items-center w-full rounded-2xl p-4 bg-white"
+        >
+          <div>
+            <p>https://frontendmentor.io</p>
+          </div>
+          <div
+            class="flex justify-center items-center flex-col lg:flex-row gap-2"
+          >
+            <p class="text-emerald-500">https://rel.link/k4lKyk</p>
+            <button class="bg-emerald-500 rounded-2xl text-white px-6 py-2">
+              Copy
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
