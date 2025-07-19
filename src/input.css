@@ -2,9 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+body {
   background: #effaea;
 }
+
+#cta {
+  background-image: url("../images/bg-boost-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* Hamburger menu */
 .hamburger {
   cursor: pointer;
@@ -17,14 +24,15 @@ body{
 .hamburger-top,
 .hamburger-middle,
 .hamburger-bottom {
+  content: "";
   position: absolute;
   width: 24px;
-  height: 2px;
+  height: 3px;
   top: 0;
   left: 0;
   background: gray;
   transform: rotate(0);
-  transform: all 0.5s;
+  transition: all 0.5s;
 }
 
 .hamburger-middle {
@@ -37,6 +45,7 @@ body{
 
 .open {
   transform: rotate(90deg);
+  transform: translateY(0px);
 }
 
 .open .hamburger-top {
@@ -49,4 +58,11 @@ body{
 
 .open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
+.ficon:hover {
+  filter: brightness(0) saturate(100%) invert(43%) sepia(46%) saturate(5370%)
+    hue-rotate(238deg) brightness(100%) contrast(94%);
+  cursor: pointer;
+  scale: 1.2;
 }
